@@ -59,6 +59,7 @@ def print_menu():
     print("2- Cargar Tags")
     # TODO: Mods Lab 1, agregar la opcion 3.
     # Agregue la opción 3 para cargar los tags de los libros.
+    print("3- Cargar Tags de los libros")
     # Pueede guiarse de las opciones 1 y 2.
     print("0- Salir")
 
@@ -97,8 +98,7 @@ def load_books_tags(app):
     :param app: Aplicación de la lógica
     :type app: logic
     """
-    booksTags = logic.load_books_tags(app,
-                                      "GoodReads/book_tags-small.csv")
+    booksTags = logic.load_books_tags(app, "GoodReads/book_tags-small.csv")
     return booksTags
 
 
@@ -130,6 +130,11 @@ def main():
             print("Total de tags cargados: " + str(tags) + "\n")
 
         # TODO: Mods Lab 1, agregar la funcion opt 3 -> load_book_tags().
+        elif int(inputs[0])==3:
+            print("Cargando información de tags de los libros")
+            bookstags = load_books_tags(app)
+            print("Total de tags de los libros cargados: " + str(bookstags) + "\n")
+            
         # Agregue la opción 3 que llama a la función load_books_tags() (creada en la lógica).
         # Esta función carga los tags de los libros en el catalogo.
         # Puede guiarse de las opciones 1 y 2.

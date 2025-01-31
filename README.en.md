@@ -1,7 +1,6 @@
 <!-- SAMPLE MVC -->
 
 # Laboratory 1:
-
 <!-- PROJECT SHIELDS -->
 
 [![Contributors][laboratorio-1-contributors-shield]][laboratorio-1-contributors-url]
